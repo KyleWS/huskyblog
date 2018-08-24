@@ -45,8 +45,7 @@ class PostView:
 		#return Response(content_type="text/plain", body=body)
 
 	#Somehow the request_param parameter lets us specify the need
-	# for something to be in the request body in order to
-	# run :¯\_(ツ)_/¯ :
+	# for something to be in the request body in order to run
 	@view_config(request_method='POST', request_param="form.edit", renderer="templates/edit.jinja2")
 	def edit(self):
 		new_name = self.request.params['new_name']
