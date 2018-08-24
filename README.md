@@ -1,0 +1,2 @@
+# huskyblog
+This project is about giving a platform to UW students, of which I was one, to voice they opinions and thoughts in a creative way. If it ends up being a busy then so be it. I strongly feel that as a student I would have wanted some way to absorb the politics of my school in a less mainstream but equally easy to use method such as reddit, yik yak, etc. The ethical philosophy of this product will be libertarian. Let people make the right decisions.
