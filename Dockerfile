@@ -9,8 +9,9 @@ ADD . /app
 
 WORKDIR /app
 EXPOSE 80
+EXPOSE 6543
 
 RUN pip install -e .
-RUN pip install -r requirements.txt
+RUN pip install -r remove_local_modules.txt
 
-ENTRYPOINT ["/app"]
+ENTRYPOINT ["pserve", "development.ini", "--reload"]

@@ -4,6 +4,8 @@ README.txt
 development.ini
 production.ini
 pytest.ini
+remove_local_modules.txt
+requirements.txt
 huskyblog/__init__.py
 huskyblog/tests.py
 huskyblog/views.py
@@ -16,6 +18,10 @@ huskyblog.egg-info/requires.txt
 huskyblog.egg-info/top_level.txt
 huskyblog/static/pyramid-16x16.png
 huskyblog/static/pyramid.png
+huskyblog/static/style.css
 huskyblog/static/theme.css
+huskyblog/templates/delete.jinja2
+huskyblog/templates/edit.jinja2
 huskyblog/templates/layout.jinja2
 huskyblog/templates/mytemplate.jinja2
+huskyblog/templates/post_home.jinja2

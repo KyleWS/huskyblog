@@ -1,0 +1,4 @@
+doctl compute droplet list
+doctl compute droplet create python-ubuntu --image docker-16-04 --region sfo2 --size s-1vcpu-1gb --ssh-keys 22241863 --wait
+doctl compute domain list
+doctl compute domain create huskyexperience.net --ip-address 142.93.21.143

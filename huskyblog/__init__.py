@@ -44,4 +44,5 @@ def main(global_config, **settings):
 
     # Make .views available to the app overall?
     config.scan('.views')
+    print("Starting to listen...")
     return config.make_wsgi_app()
