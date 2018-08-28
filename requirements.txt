@@ -7,8 +7,9 @@ click==6.7
 cookiecutter==1.6.0
 dogpile.cache==0.6.7
 future==0.16.0
+gunicorn==19.9.0
 hupper==1.3
--e git+https://github.com/KyleWS/huskyblog.git@e51daec6a706dd77e1ab2eb3201372804cb68577#egg=huskyblog&subdirectory=huskyblog
+-e git+https://github.com/KyleWS/huskyblog.git@371c073ebc5089f71e336aed17b8f98ae4f9a49b#egg=huskyblog
 idna==2.7
 itsdangerous==0.24
 Jinja2==2.10

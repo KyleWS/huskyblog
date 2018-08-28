@@ -1,11 +1,14 @@
 CHANGES.txt
 MANIFEST.in
 README.txt
+app.ini
 development.ini
+doctl_new_container_commands.txt
 production.ini
 pytest.ini
 remove_local_modules.txt
 requirements.txt
+setup.py
 huskyblog/__init__.py
 huskyblog/tests.py
 huskyblog/views.py

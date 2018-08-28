@@ -8,10 +8,12 @@ COPY . /app
 ADD . /app
 
 WORKDIR /app
-EXPOSE 80
+EXPOSE 443
 EXPOSE 6543
 
-RUN pip install -e .
-RUN pip install -r remove_local_modules.txt
+#RUN pip install -e .
 
-ENTRYPOINT ["pserve", "development.ini", "--reload"]
+RUN pip install -r remove_local_modules.txt
+RUN python setup.py develop
+
+ENTRYPOINT ["gunicorn", "--paste", "app.ini"]

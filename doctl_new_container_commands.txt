@@ -2,3 +2,14 @@ doctl compute droplet list
 doctl compute droplet create python-ubuntu --image docker-16-04 --region sfo2 --size s-1vcpu-1gb --ssh-keys 22241863 --wait
 doctl compute domain list
 doctl compute domain create huskyexperience.net --ip-address 142.93.21.143
+
+ssh root@$1 '
+ufw --force enable
+ufw allow OpenSSH
+ufw allow 80
+ufw allow 443
+'
+
+letsencrypt certonly --standalone -n --agree-tos --email kyle.i.williamssmith@gmail.com -d huskyexperience.net
+
+
